@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="newpost.css">
+    <title>newPost</title>
+</head>
+<body>
+    <header>
+        <h1 onclick="location.href='index.html'">Sportly</h1>
+        <nav class="nav-list">
+            <ul>
+                <li><a href="newPost.html">New post</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="box">
+        <h1>Sportly</h1>
+        <form>
+            <div class="innerbox">
+                <label for="question"></label>
+                <textarea name="question" id="question" rows="3" maxlength="70" placeholder="Title"></textarea>
+            </div>
+            <div>
+                <label for="message"></label>
+                <textarea name="message" id="message" rows="8" placeholder="What are your thoughts?"></textarea>
+            </div>
+            <input id="categorie" type="text" placeholder="Add Categorie">
+            <input id="addcat" type="button" value="Add">
+            <input id="post" type="submit" value="Post" onclick="location.href='index.html'">
+        </form>
+    </div>
+</body>
+</html>

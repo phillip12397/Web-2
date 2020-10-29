@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #3d3d3d;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px 5%;
+    background: #4b4b4b;
+}
+
+header h1{
+    display: inline-block;
+    font-weight: 300;
+    font-size: large;
+    color: #ffffff;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+h1,h2,h3,p,a,li{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: small;
+}
+
+h2{
+    font-size: medium;
+}
+
+.nav-list{
+    list-style: none;
+}
+
+.nav-list li{
+    display: inline-block;
+    padding: 0px 5px;
+    white-space: nowrap;
+}
+
+.nav-list li a{
+    transition: all 0.5s;
+}
+
+.nav-list li a:hover{
+    color: #55b9e7;
+}
+
+.box{
+    position: absolute;
+    margin-top: 2%;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#comment, #answer{
+    font-size: large;
+    font-weight: 800;
+    text-align: center;
+}
+
+.post{
+    background: #4b4b4b;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 2% 0% 5%;
+}
+
+.commentsend{
+    margin: 2% auto;
+}
+
+textarea{
+    resize: none;
+    width: 70%;
+    padding: 5px 2%;
+    border-radius: 5px;
+}
+
+.commentsend input[type="submit"]{
+    border: #55b9e7;
+    text-align: center;
+    float: right;
+    padding: 15px 2px;
+    width: 10%;
+    background: #55b9e7;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.commentsend input[type="submit"]:active{
+    background: #3e88aa;
+}
+
+.answers>div{
+    width: 80%;
+    background: #4b4b4b;
+    margin: 3% auto;
+    padding: 5px 5%;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    .box{
+        width: 90%;
+    }
+    .answers>div{
+        width: 90%;
+    }
+    textarea{
+        width: 90%;
+        display: block;
+    }
+    .commentsend input[type="submit"]{
+        margin-top: 3%;
+        width: 50%;
+        padding: 5px 2%;
+    }
+    .commentsend{
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}

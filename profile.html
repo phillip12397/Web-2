@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profile.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 onclick="location.href='index.html'">Sportly</h1>
+        <nav class="nav-list">
+            <ul>
+                <li><a href="newPost.html">New post</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="box">
+        <div class="settings">
+            <h1>Settings</h1>
+            <form class="username">
+                <h3 id="h3username">Current Username</h3>
+                <input id="username" type="text" placeholder="Username">
+                <input id="changeusername" type="submit" value="Change">
+            </form>
+            <form class="email">
+                <h3 id="h3email">Current Email</h3>
+                <input id="email" type="email" placeholder="E-Mail">
+                <input id="changeemail" type="submit" value="Change">
+            </form>
+            <form class="password">
+                <h3 id="h3password">Change password</h3>
+                <input id="oldpassword" type="password" placeholder="Old password">
+                <input id="newpassword" type="password" placeholder="New password">
+                <input id="changepassword" type="submit" value="Change">
+            </form>
+        </div>
+        <div class="posts">
+            <h1>My Posts</h1>
+            <div class="post" onclick="location.href='post.html'">
+                <h2>Ist man mit 10 zu alt um mit Eishockey anzufangen ?</h2>
+                <p>Hallo, wie ihr oben schon sehen Könnt würde ich ganz gerne mit Eishockey anfangen.
+                    Doch ich weiß nicht genau ob ich schon zu alt bin um damit anzufange, deswegen wollte 
+                    ich euch mal um eure Meinung dazu wissen.
+                </p>
+            </div>
+            <div class="post" onclick="location.href='post.html'">
+                <h2>Ist man mit 10 zu alt um mit Eishockey anzufangen ?</h2>
+                <p>Hallo, wie ihr oben schon sehen Könnt würde ich ganz gerne mit Eishockey anfangen.
+                    Doch ich weiß nicht genau ob ich schon zu alt bin um damit anzufange, deswegen wollte 
+                    ich euch mal um eure Meinung dazu wissen.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
